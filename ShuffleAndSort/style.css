@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #efefef;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin: 0;
+}
+
+/* Card Colors */
+.color1 {
+  background-color: #6f98a8;
+}
+
+.color2 {
+  background-color: #2b8ead;
+}
+
+.color3 {
+  background-color: #2f454e;
+}
+
+.color4 {
+  background-color: #bfbfbf;
+}
+
+.container {
+  width: 960px;
+  height: 80%;
+}
+
+h2 {
+  text-align: center;
+}
+.board {
+  border-top: 5px solid #bfbfbf;
+}
+
+.card-board {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  width: 80%;
+  height: 80%;
+  float: left;
+}
+
+.card-board > button {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  height: 33%;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 80px;
+}
+
+.card-side {
+  float: right;
+  width: 20%;
+  height: 100px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+.btn-action {
+  padding: 12px;
+  background-color: #72c3dc;
+  margin: 0 auto;
+  display: block;
+  margin-top: 10px;
+  color: #fff;
+  border-bottom: 5px solid #2b8ead;
+  width: 180px;
+  border-radius: 10px;
+}
+
+.desc {
+  font-style: italic;
+}
+
+/* Responsive Queries */
+@media screen and (max-width: 960px) {
+  .container {
+    width: 960px;
+  }
+}
+
+@media (min-width: 280px) and (max-width: 720px) {
+  .headerText {
+    background: #333333;
+    width: 100%;
+    color: #fff;
+  }
+
+  body {
+    background-color: #fff;
+    margin: 0;
+  }
+
+  .container {
+    width: 375px;
+    height: auto;
+  }
+
+  .card-board {
+    float: initial;
+    margin: auto;
+  }
+
+  .card-side {
+    width: 100%;
+    margin-bottom: 20px;
+    float: initial;
+  }
+
+  .card {
+    width: 100%;
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #efefef;
+    height: 40px;
+    font-size: 24px;
+    color: #000;
+  }
+
+  .color-1 {
+    border-left: 5px solid #2b8ead;
+  }
+
+  .color-2 {
+    border-left: 5px solid #6f98a8;
+  }
+
+  .color-3 {
+    border-left: 5px solid #bfbfbf;
+  }
+
+  .color-4 {
+    border-left: 5px solid #2f454e;
+  }
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="headerText">
+      <h2>Shuffle and Sort</h2>
+    </div>
+
+    <div class="container">
+      <div class="board">
+        <div class="card-side">
+          <button onclick="shuffleCards();" class="btn-action">Shuffle</button>
+          <button onclick="sortCards();" class="btn-action">Sort</button>
+        </div>
+        <div id="card-board" class="card-board"></div>
+      </div>
+    </div>
+
+    <div>
+      <h3 class="desc">Shuffle and sort by <span id="author"></span></h3>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
